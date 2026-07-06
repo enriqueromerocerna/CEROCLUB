@@ -1,0 +1,16 @@
+{
+  "name": "CERO GRADOS - Tarjeta de Cliente",
+  "short_name": "CERO GRADOS",
+  "description": "Junta sellos y gana raspadillas gratis",
+  "lang": "es",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFE9F5",
+  "theme_color": "#FE018F",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
