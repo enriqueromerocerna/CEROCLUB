@@ -1,4 +1,4 @@
-const CACHE = 'cerogrados-v1';
+const CACHE = 'cerogrados-v2';
 const ASSETS = [
   './',
   './index.html',

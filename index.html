@@ -447,6 +447,50 @@ button{font-family:'Nunito',sans-serif;font-weight:800;border:none;cursor:pointe
 #qr-mostrador img,#qr-mostrador canvas{border:10px solid #fff;border-radius:12px}
 .texto-mostrador{text-align:center;font-size:13px;font-weight:700;opacity:.85;margin-top:12px;line-height:1.5}
 
+
+/* ===== Promociones ===== */
+body.con-nav{padding-bottom:96px}
+#view-promos{width:100%;max-width:400px}
+.promos-head{text-align:center;margin:4px 0 14px}
+.promos-head h2{font-size:24px;color:var(--magenta)}
+.promos-head p{font-size:13px;font-weight:700;opacity:.65}
+.promos-vacio{background:#fff;border-radius:18px;padding:26px 18px;text-align:center;font-weight:700;opacity:.8;line-height:1.5}
+.promo{background:#fff;border-radius:20px;box-shadow:0 10px 26px rgba(41,13,98,.16);margin-bottom:14px;overflow:hidden;position:relative;animation:aparecer .4s ease both}
+.promo.canjeada{opacity:.55;filter:grayscale(.6)}
+.promo-top{background:var(--magenta);background-image:repeating-linear-gradient(-45deg,rgba(255,255,255,.07) 0 14px,transparent 14px 28px);color:#fff;padding:16px 18px 14px}
+.promo-titulo{font-family:'Baloo 2',cursive;font-weight:800;font-size:19px;line-height:1.15;padding-right:56px}
+.promo-dto{font-family:'Baloo 2',cursive;font-weight:800;font-size:30px;color:var(--amarillo);line-height:1.1;margin-top:2px}
+.promo-nueva{position:absolute;top:12px;right:12px;background:var(--amarillo);color:var(--navy);font-size:11px;font-weight:800;border-radius:8px;padding:2px 8px;z-index:1}
+.promo-body{padding:14px 18px 16px;font-size:14px;font-weight:600;line-height:1.45}
+.promo-cod{border:2.5px dashed var(--magenta);border-radius:12px;text-align:center;font-family:'Baloo 2',cursive;font-weight:800;font-size:22px;letter-spacing:3px;color:var(--magenta-osc);padding:8px;margin-top:12px}
+.promo-sub{text-align:center;font-size:12px;opacity:.6;margin-top:6px}
+.promo-vence{font-size:12.5px;font-weight:800;opacity:.75;margin-top:10px;text-align:center}
+.cumple-box{background:var(--amarillo);border-radius:18px;padding:14px 16px;margin-bottom:14px;font-size:13.5px;font-weight:700;line-height:1.4}
+.cumple-box input{width:100%;border:none;border-radius:10px;padding:10px;font-size:16px;margin-top:8px;font-family:inherit;font-weight:700;color:var(--navy)}
+.nav-inf{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;background:#fff;border-top:2px solid rgba(41,13,98,.1);padding:8px 10px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -6px 20px rgba(41,13,98,.12)}
+.nav-in{display:flex;width:100%;max-width:400px;gap:8px}
+.nav-btn{flex:1;position:relative;background:transparent;color:var(--navy);opacity:.55;border-radius:14px;padding:7px 4px;font-size:12.5px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.nav-btn .ic{font-size:21px;line-height:1}
+.nav-btn.activa{opacity:1;background:var(--rosa);color:var(--magenta-osc)}
+.nav-badge{position:absolute;top:0;left:calc(50% + 8px);min-width:19px;height:19px;padding:0 5px;border-radius:10px;background:var(--rojo);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;border:2px solid #fff}
+.toast{position:fixed;left:14px;right:14px;bottom:88px;max-width:380px;margin:0 auto;z-index:60;background:var(--navy);color:#fff;border-radius:14px;padding:13px 16px;font-size:14px;font-weight:800;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.3);animation:subirmodal .3s ease both}
+/* admin promos */
+.tabs .tab{font-size:12px;padding:10px 2px}
+.camp{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border-radius:12px;padding:11px 12px;margin-bottom:8px;cursor:pointer}
+.camp.sel{outline:3px solid var(--amarillo)}
+.camp .ci{font-size:26px}
+.camp .ct{font-weight:800;font-size:14.5px}
+.camp .cs{font-size:12px;opacity:.7;font-weight:600}
+.in-admin{width:100%;border:none;border-radius:12px;padding:12px 14px;font-size:15px;font-weight:700;color:var(--navy);font-family:'Nunito',sans-serif;margin-top:8px;background:#fff}
+.pa{background:rgba(255,255,255,.1);border-radius:12px;padding:10px 12px;margin-top:8px;font-size:13px;font-weight:700;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.pa small{display:block;opacity:.7;font-weight:600;margin-top:2px}
+.btn-mini{background:var(--rojo);color:#fff;border-radius:8px;padding:7px 11px;font-size:12px;white-space:nowrap}
+.d-promos-t{font-weight:800;font-size:13px;margin:12px 0 4px;color:var(--magenta-osc)}
+.d-promo{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--hielo);border-radius:10px;padding:9px 11px;margin-top:6px;font-size:13px}
+.d-promo small{opacity:.65;font-weight:700}
+.d-promo .btn-mini{background:var(--magenta)}
+.d-usado{font-weight:800;color:var(--verde);font-size:12.5px}
+
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none !important;transition:none !important}
 }
@@ -478,6 +522,10 @@ button{font-family:'Nunito',sans-serif;font-weight:800;border:none;cursor:pointe
   <div class="campo">
     <label for="reg-telefono">Tu celular (9 dígitos)</label>
     <input id="reg-telefono" type="tel" inputmode="numeric" maxlength="9" placeholder="Ej: 987654321" autocomplete="tel">
+  </div>
+  <div class="campo">
+    <label for="reg-cumple">Tu cumpleaños 🎂 (opcional, para tu regalo)</label>
+    <input id="reg-cumple" type="date">
   </div>
   <button id="btn-crear" class="btn-crear">Crear mi tarjeta 🍧</button>
 </div>
@@ -514,6 +562,28 @@ button{font-family:'Nunito',sans-serif;font-weight:800;border:none;cursor:pointe
   </div>
 </div>
 
+<!-- ============ VISTA: PROMOCIONES (CLIENTE) ============ -->
+<div id="view-promos" class="oculto">
+  <div class="promos-head">
+    <h2 class="baloo">🎁 Promociones</h2>
+    <p>Cupones y ofertas de CERO GRADOS para ti</p>
+  </div>
+  <div id="promos-cumple" class="cumple-box oculto">
+    <b>🎂 ¿Cuándo es tu cumpleaños?</b><br>Dínoslo y recibe tu regalo en tu mes.
+    <input id="cumple-input" type="date">
+    <button id="btn-cumple" class="btn-crear" style="margin-top:8px;font-size:14px;padding:10px">Guardar</button>
+  </div>
+  <div id="promos-lista"></div>
+</div>
+
+<div id="toast" class="toast oculto"></div>
+<nav id="nav-inferior" class="nav-inf oculto">
+  <div class="nav-in">
+    <button id="nav-tarjeta" class="nav-btn activa"><span class="ic">💳</span>Mi tarjeta</button>
+    <button id="nav-promos" class="nav-btn"><span class="ic">🎁</span>Promociones<span id="nav-badge" class="nav-badge oculto">0</span></button>
+  </div>
+</nav>
+
 <!-- ============ MODAL: GUÍA DE INSTALACIÓN (iPhone / navegadores sin prompt) ============ -->
 <div id="modal-instalar" class="modal-overlay oculto">
   <div class="modal-instalar-caja">
@@ -547,6 +617,7 @@ button{font-family:'Nunito',sans-serif;font-weight:800;border:none;cursor:pointe
     <button class="tab activa" data-tab="scan">📷 Escanear</button>
     <button class="tab" data-tab="buscar">🔍 Buscar</button>
     <button class="tab" data-tab="mostrador">🪧 QR tienda</button>
+    <button class="tab" data-tab="promos">📣 Promos</button>
   </div>
 
   <!-- Tab escanear -->
@@ -573,12 +644,36 @@ button{font-family:'Nunito',sans-serif;font-weight:800;border:none;cursor:pointe
     </div>
   </div>
 
+  <!-- Tab promociones -->
+  <div id="tab-promos" class="oculto">
+    <div class="sub">Toca una campaña, revísala y envíala a tus clientes registrados.</div>
+    <div id="lista-campanias"></div>
+    <div id="form-campania" class="oculto">
+      <input id="pf-titulo" class="in-admin" maxlength="60" placeholder="Título">
+      <input id="pf-mensaje" class="in-admin" maxlength="140" placeholder="Mensaje">
+      <input id="pf-dto" class="in-admin" maxlength="20" placeholder="Descuento (ej: 5% DSCTO)">
+      <select id="pf-vig" class="in-admin">
+        <option value="1">Vale 1 hora</option>
+        <option value="3">Vale 3 horas</option>
+        <option value="24">Vale 24 horas</option>
+        <option value="72">Vale 3 días</option>
+        <option value="168">Vale 7 días</option>
+        <option value="mes">Hasta fin de mes</option>
+      </select>
+      <button id="btn-enviar-promo" class="btn-admin oro">📣 Enviar a mis clientes</button>
+    </div>
+    <div id="msg-promo" class="msg-admin oculto"></div>
+    <div class="sub" style="margin:18px 0 0">Promociones activas</div>
+    <div id="promos-activas"></div>
+  </div>
+
   <!-- Detalle de cliente seleccionado -->
   <div id="detalle" class="detalle oculto">
     <div id="d-nombre" class="d-nombre">—</div>
     <div id="d-info" class="d-info"></div>
     <div id="d-sellos" class="d-sellos"></div>
     <div id="d-premios" class="d-premios"></div>
+    <div id="d-promos"></div>
     <button id="btn-sello" class="btn-admin">➕ Dar 1 sello</button>
     <button id="btn-canjear" class="btn-admin oro oculto">🎁 Canjear premio (reinicia sellos)</button>
     <button id="btn-volver" class="btn-admin sec">← Volver</button>
@@ -618,7 +713,18 @@ const CONFIG = {
   metaSellos: 10,      // Ajustado a 10 visitas para ganar el premio
   premio: "combo o pack de recompensa",
   pinAdmin: "Enrique72709737",   // ⚠️ Recuerda que este es el PIN que usarás para sellar
-  whatsapp: "51906591534"
+  whatsapp: "51906591534",
+
+  // 📣 Campañas predefinidas del panel de tienda (edita textos, descuentos y vigencia a tu gusto)
+  // vig = horas de vigencia, o "mes" = hasta fin de mes. destino: "todos" o "cumple_mes" (solo cumpleañeros del mes)
+  campanias: [
+    { id:"halloween", icono:"🎃", nombre:"Halloween", titulo:"🎃 ¡Especial de Halloween!", mensaje:"Celebra Halloween con Cero Grados. Muestra este cupón en tienda y llévate tu descuento.", descuento:"10% DSCTO", vig:24, destino:"todos" },
+    { id:"criolla", icono:"🎶", nombre:"Día de la Canción Criolla", titulo:"🎶 Día de la Canción Criolla", mensaje:"Disfruta tu raspadilla al ritmo criollo. Muestra este cupón en tienda y recibe tu descuento.", descuento:"10% DSCTO", vig:24, destino:"todos" },
+    { id:"cumple", icono:"🎂", nombre:"Cumpleaños (clientes del mes)", titulo:"🎂 ¡Feliz cumpleaños!", mensaje:"Este mes es tu cumpleaños y Cero Grados lo celebra contigo. Muestra este cupón en tienda.", descuento:"10% DSCTO", vig:"mes", destino:"cumple_mes" },
+    { id:"cupon5", icono:"🏷️", nombre:"Cupón de descuento 5%", titulo:"🏷️ Cupón de descuento", mensaje:"Tienes un cupón especial de Cero Grados. Muestra el código en tienda al pagar.", descuento:"5% DSCTO", vig:168, destino:"todos" },
+    { id:"relampago", icono:"⚡", nombre:"Cupón relámpago (1 hora)", titulo:"⚡ Cupón relámpago", mensaje:"¡Estás de suerte! Úsalo ahora en tienda, vale por tiempo limitado.", descuento:"5% DSCTO", vig:1, destino:"todos" },
+    { id:"custom", icono:"✍️", nombre:"Promo personalizada", titulo:"", mensaje:"", descuento:"", vig:24, destino:"todos" }
+  ]
 };
 
 /* ============================================================ */
@@ -634,6 +740,199 @@ let sellosPrevios = -1;
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* ---------- Promociones ---------- */
+let clienteActual = null, clienteId = null, refPromos = null, promosCache = {}, promosCargadas = false;
+let nuevasSesion = new Set(), campSel = null, detalleCliente = null, toastTimer = null;
+const K_VISTAS = "cg_promos_vistas";
+function getVistas() { try { return JSON.parse(localStorage.getItem(K_VISTAS) || "[]"); } catch (e) { return []; } }
+function setVistas(a) { try { localStorage.setItem(K_VISTAS, JSON.stringify(a.slice(-200))); } catch (e) {} }
+
+function aplicaPromo(p, c) {
+  if (!p || p.activa === false) return false;
+  if (p.vence && p.vence < Date.now()) return false;
+  if (p.destino === "cumple_mes") {
+    if (!c || !c.cumple) return false;
+    return parseInt(c.cumple.slice(0, 2), 10) === new Date(p.creada).getMonth() + 1;
+  }
+  return true;
+}
+function textoVence(v) {
+  if (!v) return "Sin fecha límite";
+  const ms = v - Date.now();
+  if (ms <= 0) return "Vencida";
+  const min = Math.round(ms / 60000);
+  if (min < 60) return "⏱️ Vence en " + Math.max(min, 1) + " min";
+  const h = Math.round(min / 60);
+  if (h < 24) return "⏱️ Vence en " + h + " h";
+  return "📅 Vence el " + new Date(v).toLocaleDateString("es-PE", { day: "numeric", month: "short" });
+}
+function promosVisibles() {
+  return Object.entries(promosCache)
+    .filter(([id, p]) => aplicaPromo(p, clienteActual))
+    .sort((a, b) => (b[1].creada || 0) - (a[1].creada || 0));
+}
+function mostrarToast(txt) {
+  const t = $("toast");
+  t.textContent = txt;
+  t.classList.remove("oculto");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.add("oculto"), 4500);
+}
+function iniciarPromos() {
+  if (refPromos) return;
+  refPromos = db.ref("fidelizacion/promociones").orderByChild("creada").limitToLast(40);
+  refPromos.on("value", snap => {
+    const nuevo = snap.val() || {};
+    if (promosCargadas && clienteActual && !$("view-card").classList.contains("oculto")) {
+      Object.keys(nuevo).forEach(id => {
+        if (!promosCache[id] && aplicaPromo(nuevo[id], clienteActual)) mostrarToast("🎁 Nueva promo: " + nuevo[id].titulo);
+      });
+    }
+    promosCache = nuevo;
+    promosCargadas = true;
+    renderPromos();
+  });
+}
+function renderPromos() {
+  if (!clienteActual) return;
+  const vis = promosVisibles();
+  const vistas = getVistas();
+  const enPantalla = !$("view-promos").classList.contains("oculto");
+  if (enPantalla) {
+    const cont = $("promos-lista");
+    if (!vis.length) {
+      cont.innerHTML = "<div class='promos-vacio'>Aún no tienes promociones.<br>¡Aquí aparecerán tus cupones! 🎁</div>";
+    } else {
+      cont.innerHTML = vis.map(([id, p]) => {
+        const canj = p.canjes && p.canjes[clienteId];
+        const nueva = (!vistas.includes(id) || nuevasSesion.has(id)) && !canj;
+        return "<div class='promo" + (canj ? " canjeada" : "") + "'>" +
+          (nueva ? "<span class='promo-nueva'>NUEVA</span>" : "") +
+          "<div class='promo-top'><div class='promo-titulo'>" + esc(p.titulo) + "</div>" +
+          (p.descuento ? "<div class='promo-dto'>" + esc(p.descuento) + "</div>" : "") + "</div>" +
+          "<div class='promo-body'><div>" + esc(p.mensaje) + "</div>" +
+          (canj ? "<div class='promo-cod'>✔ Ya usado</div>"
+                : "<div class='promo-cod'>" + esc(p.codigo) + "</div><div class='promo-sub'>Muestra este código en tienda al pagar</div>") +
+          "<div class='promo-vence'>" + textoVence(p.vence) + "</div></div></div>";
+      }).join("");
+    }
+    let cambio = false;
+    vis.forEach(([id]) => { if (!vistas.includes(id)) { nuevasSesion.add(id); vistas.push(id); cambio = true; } });
+    if (cambio) setVistas(vistas);
+  }
+  $("promos-cumple").classList.toggle("oculto", !!clienteActual.cumple);
+  const vv = getVistas();
+  const n = vis.filter(([id, p]) => !vv.includes(id) && !(p.canjes && p.canjes[clienteId])).length;
+  const b = $("nav-badge");
+  b.textContent = n;
+  b.classList.toggle("oculto", n === 0);
+  try { if (n > 0) navigator.setAppBadge && navigator.setAppBadge(n); else navigator.clearAppBadge && navigator.clearAppBadge(); } catch (e) {}
+}
+function abrirPromos() { mostrarVista("view-promos"); renderPromos(); }
+function volverTarjeta() { nuevasSesion.clear(); mostrarVista("view-card"); }
+function guardarCumple() {
+  const v = $("cumple-input").value;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(v)) { alert("Elige tu fecha de cumpleaños 🎂"); return; }
+  db.ref("fidelizacion/clientes/" + clienteId + "/cumple").set(v.slice(5))
+    .then(() => mostrarToast("🎂 ¡Listo! Te avisaremos en tu mes"))
+    .catch(() => alert("No se pudo guardar. Revisa tu internet."));
+}
+setInterval(() => { if (clienteActual) renderPromos(); }, 30000);
+
+/* ---- Promociones: panel de tienda ---- */
+function textoVigencia(c) { return c.vig === "mes" ? "hasta fin de mes" : (c.vig >= 24 ? (c.vig / 24) + " día(s)" : c.vig + " h"); }
+function pintarCampanias() {
+  const cont = $("lista-campanias");
+  cont.innerHTML = "";
+  CONFIG.campanias.forEach(c => {
+    const d = document.createElement("div");
+    d.className = "camp" + (campSel && campSel.id === c.id ? " sel" : "");
+    d.innerHTML = "<div class='ci'>" + c.icono + "</div><div><div class='ct'>" + esc(c.nombre) + "</div><div class='cs'>" +
+      (c.descuento ? esc(c.descuento) + " · " : "") + textoVigencia(c) + "</div></div>";
+    d.addEventListener("click", () => elegirCampania(c.id));
+    cont.appendChild(d);
+  });
+}
+function elegirCampania(id) {
+  campSel = CONFIG.campanias.find(c => c.id === id);
+  $("pf-titulo").value = campSel.titulo;
+  $("pf-mensaje").value = campSel.mensaje;
+  $("pf-dto").value = campSel.descuento;
+  $("pf-vig").value = String(campSel.vig);
+  $("form-campania").classList.remove("oculto");
+  $("msg-promo").classList.add("oculto");
+  pintarCampanias();
+}
+function cuentaDestino(destino) {
+  const mes = new Date().getMonth() + 1;
+  return Object.values(cacheClientes).filter(c => destino !== "cumple_mes" || (c.cumple && parseInt(c.cumple.slice(0, 2), 10) === mes)).length;
+}
+function enviarCampania() {
+  if (!campSel) return;
+  const titulo = $("pf-titulo").value.trim(), mensaje = $("pf-mensaje").value.trim(), dto = $("pf-dto").value.trim();
+  if (!titulo || !mensaje) { alert("Completa el título y el mensaje."); return; }
+  const vig = $("pf-vig").value, ahora = Date.now();
+  let vence;
+  if (vig === "mes") { const d = new Date(); vence = new Date(d.getFullYear(), d.getMonth() + 1, 0, 23, 59, 59).getTime(); }
+  else vence = ahora + Number(vig) * 3600000;
+  const n = cuentaDestino(campSel.destino);
+  if (!confirm("¿Enviar \"" + titulo + "\" a " + n + " cliente(s)?")) return;
+  const codigo = campSel.id.slice(0, 5).toUpperCase() + "-" + Math.floor(100 + Math.random() * 900);
+  const promo = { titulo, mensaje, descuento: dto, codigo, tipo: campSel.id, destino: campSel.destino, creada: ahora, vence, activa: true };
+  $("btn-enviar-promo").disabled = true;
+  db.ref("fidelizacion/promociones").push(promo).then(() => {
+    const m = $("msg-promo");
+    m.innerHTML = "✅ Promoción enviada a <b>" + n + "</b> cliente(s). Les aparece en su pestaña 🎁 Promociones con un numerito.";
+    m.classList.remove("oculto");
+    $("form-campania").classList.add("oculto");
+    campSel = null; pintarCampanias();
+    cargarPromosAdmin();
+  }).catch(() => alert("No se pudo enviar. Revisa tu internet."))
+    .finally(() => { $("btn-enviar-promo").disabled = false; });
+}
+function cargarPromosAdmin() {
+  db.ref("fidelizacion/promociones").once("value").then(snap => {
+    const ps = snap.val() || {};
+    const cont = $("promos-activas");
+    const lista = Object.entries(ps).filter(([id, p]) => p.activa !== false && (!p.vence || p.vence > Date.now()))
+      .sort((a, b) => (b[1].creada || 0) - (a[1].creada || 0));
+    if (!lista.length) { cont.innerHTML = "<div class='msg-admin'>No hay promociones activas.</div>"; return; }
+    cont.innerHTML = lista.map(([id, p]) =>
+      "<div class='pa'><div>" + esc(p.titulo) + "<small>" + esc(p.codigo) + " · " + textoVence(p.vence) + " · 🎟️ " + Object.keys(p.canjes || {}).length + " canje(s)</small></div>" +
+      "<button class='btn-mini' data-id='" + id + "'>Desactivar</button></div>").join("");
+    cont.querySelectorAll("button[data-id]").forEach(b => b.addEventListener("click", () => {
+      if (!confirm("¿Desactivar esta promoción? Dejará de verse en los celulares.")) return;
+      db.ref("fidelizacion/promociones/" + b.dataset.id + "/activa").set(false).then(cargarPromosAdmin);
+    }));
+  });
+}
+function abrirTabPromos() { pintarCampanias(); cargarPromosAdmin(); }
+function pintarPromosDetalle(id, c) {
+  detalleCliente = c;
+  const cont = $("d-promos");
+  cont.innerHTML = "";
+  db.ref("fidelizacion/promociones").once("value").then(snap => {
+    const ps = snap.val() || {};
+    const lista = Object.entries(ps).filter(([pid, p]) => aplicaPromo(p, c)).sort((a, b) => (b[1].creada || 0) - (a[1].creada || 0));
+    if (!lista.length) return;
+    let h = "<div class='d-promos-t'>🎁 Promociones de este cliente</div>";
+    lista.forEach(([pid, p]) => {
+      const usado = p.canjes && p.canjes[id];
+      h += "<div class='d-promo'><div><b>" + esc(p.titulo) + "</b><br><small>" + esc(p.descuento || "") + " · " + esc(p.codigo) + "</small></div>" +
+        (usado ? "<span class='d-usado'>✔ usado</span>" : "<button class='btn-mini' data-pid='" + pid + "'>Canjear</button>") + "</div>";
+    });
+    cont.innerHTML = h;
+    cont.querySelectorAll("button[data-pid]").forEach(b => b.addEventListener("click", () => canjearPromo(b.dataset.pid)));
+  });
+}
+function canjearPromo(pid) {
+  if (!idDetalle) return;
+  if (!confirm("¿Marcar este cupón como usado por el cliente?")) return;
+  db.ref("fidelizacion/promociones/" + pid + "/canjes/" + idDetalle).set(Date.now())
+    .then(() => pintarPromosDetalle(idDetalle, detalleCliente || {}))
+    .catch(() => alert("No se pudo canjear. Inténtalo de nuevo."));
+}
 
 /* ---------- Info: cómo gano sellos / mi recompensa ---------- */
 const INFO_CONTENIDO = {
@@ -725,9 +1024,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function mostrarVista(id) {
-  ["view-setup","view-register","view-card","view-admin"].forEach(v => $(v).classList.add("oculto"));
+  ["view-setup","view-register","view-card","view-promos","view-admin"].forEach(v => $(v).classList.add("oculto"));
   $(id).classList.remove("oculto");
   $("link-reset").classList.toggle("oculto", id !== "view-card");
+  const conNav = (id === "view-card" || id === "view-promos");
+  $("nav-inferior").classList.toggle("oculto", !conNav);
+  document.body.classList.toggle("con-nav", conNav);
+  $("nav-tarjeta").classList.toggle("activa", id === "view-card");
+  $("nav-promos").classList.toggle("activa", id === "view-promos");
   if (id !== "view-admin") detenerScanner();
 }
 
@@ -735,6 +1039,7 @@ function mostrarVista(id) {
 function crearTarjeta() {
   const nombre = $("reg-nombre").value.trim();
   const tel = $("reg-telefono").value.trim();
+  const cumpleRaw = $("reg-cumple").value;
   const err = $("reg-error");
   err.classList.add("oculto");
 
@@ -754,6 +1059,7 @@ function crearTarjeta() {
       }
       const id = "CG-" + (Date.now().toString(36) + Math.random().toString(36).slice(2, 5)).toUpperCase().slice(-6);
       const datos = { nombre, telefono: tel, sellos: 0, premios: 0, creado: Date.now(), ultimo: 0 };
+      if (/^\d{4}-\d{2}-\d{2}$/.test(cumpleRaw)) datos.cumple = cumpleRaw.slice(5); // solo mes-día
       return db.ref("fidelizacion/clientes/" + id).set(datos).then(() => {
         localStorage.setItem("cg_card_id", id);
         mostrarTarjeta(id);
@@ -786,6 +1092,9 @@ function mostrarTarjeta(id) {
     $("card-nombre").textContent = c.nombre;
     $("card-desde").textContent = "Cliente desde " + new Date(c.creado).toLocaleDateString("es-PE", {month:"short", year:"numeric"});
     $("card-id").textContent = id;
+    clienteActual = c; clienteId = id;
+    iniciarPromos();
+    renderPromos();
 
     pintarSellos(c.sellos || 0);
 
@@ -855,10 +1164,11 @@ function entrarAdmin() {
 
 function cambiarTab(tab) {
   document.querySelectorAll(".tab").forEach(t => t.classList.toggle("activa", t.dataset.tab === tab));
-  ["scan","buscar","mostrador"].forEach(t => $("tab-" + t).classList.toggle("oculto", t !== tab));
+  ["scan","buscar","mostrador","promos"].forEach(t => $("tab-" + t).classList.toggle("oculto", t !== tab));
   $("detalle").classList.add("oculto");
   if (tab !== "scan") detenerScanner();
   if (tab === "buscar") { cargarClientes(); pintarLista($("input-buscar").value); }
+  if (tab === "promos") { cargarClientes(); abrirTabPromos(); }
 }
 
 function cargarClientes() {
@@ -903,6 +1213,7 @@ function abrirDetalle(id) {
     $("d-info").textContent = "📱 " + c.telefono + " · " + id + " · desde " + new Date(c.creado).toLocaleDateString("es-PE");
     $("d-sellos").innerHTML = (c.sellos || 0) + " <small>/ " + CONFIG.metaSellos + " sellos</small>";
     $("d-premios").textContent = (c.premios || 0) > 0 ? "🏆 " + c.premios + " premio(s) ya canjeado(s)" : "";
+    pintarPromosDetalle(id, c);
     const full = (c.sellos || 0) >= CONFIG.metaSellos;
     $("btn-sello").disabled = full;
     $("btn-sello").textContent = full ? "Tarjeta llena ✔" : "➕ Dar 1 sello";
@@ -1006,6 +1317,11 @@ function generarQRMostrador() {
 /* ---------- Eventos ---------- */
 function conectarEventos() {
   $("btn-crear").addEventListener("click", crearTarjeta);
+  $("nav-tarjeta").addEventListener("click", volverTarjeta);
+  $("nav-promos").addEventListener("click", abrirPromos);
+  $("toast").addEventListener("click", () => { $("toast").classList.add("oculto"); if (clienteActual) abrirPromos(); });
+  $("btn-cumple").addEventListener("click", guardarCumple);
+  $("btn-enviar-promo").addEventListener("click", enviarCampania);
   $("reg-telefono").addEventListener("keydown", e => { if (e.key === "Enter") crearTarjeta(); });
 
   $("btn-info-sellos").addEventListener("click", () => abrirInfo("sellos"));
